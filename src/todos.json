@@ -1,0 +1,52 @@
+{
+    "todos" :[
+        {
+            "titulo":"task 1",
+            "responsible":"Manuel",
+            "description":"Lorem Ipsum",
+            "priority":"low"
+        },
+        {
+            "titulo":"task 2",
+            "responsible":"Manuel",
+            "description":"Lorem Ipsum",
+            "priority":"medium"
+        },
+        {
+            "titulo":"task 3",
+            "responsible":"Mariana",
+            "description":"Lorem Ipsum",
+            "priority":"high"
+        },
+        {
+            "titulo":"task 4",
+            "responsible":"Mariana",
+            "description":"Lorem Ipsum",
+            "priority":"Low"
+        },
+        {
+            "titulo":"task 5",
+            "responsible":"Manuel",
+            "description":"Lorem Ipsum",
+            "priority":"high"
+        },
+        {
+            "titulo":"task 6",
+            "responsible":"Manuel",
+            "description":"Lorem Ipsum",
+            "priority":"high"
+        },
+        {
+            "titulo":"task 7",
+            "responsible":"Mariana",
+            "description":"Lorem Ipsum",
+            "priority":"medium"
+        },
+        {
+            "titulo":"task 8",
+            "responsible":"Manuel",
+            "description":"Lorem Ipsum",
+            "priority":"Low"
+        }
+    ]
+}
