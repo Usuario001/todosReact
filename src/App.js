@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 //custom
 import Navigation from './components/Navigation';
 import TodoForm from './components/TodoForm';
+import Clock from './components/Clock';
+//import QrCodes from './components/QrCodes';
+//data
 import {todos} from './todos.json';
 
 class App extends Component {
@@ -62,6 +66,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navigation titulo="Task" TareasTotales={this.state.todos.length} />
+        <Clock/>
         <img src={logo} className="App-logo" alt="logo" />
         <div className="container">
           <div className="row mt-4">
@@ -70,6 +75,13 @@ class App extends Component {
             </div>
             <div className="col-md-9">
               {todos}
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row mt-4">
+            <div className="col-md-6">
+              {/*<QrCodes/>*/}
             </div>
           </div>
         </div>
