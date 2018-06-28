@@ -11,6 +11,7 @@ class QrCodes extends Component {
     }
     this.handleScan = this.handleScan.bind(this)
   }
+
   handleScan(data){
     if (data) {
       this.setState({
@@ -22,6 +23,7 @@ class QrCodes extends Component {
   handleError(err){
     console.log(err);
   }
+
   render(){
     return (
       <div>
@@ -36,4 +38,5 @@ class QrCodes extends Component {
     )
   }
 }
+
 export default QrCodes;

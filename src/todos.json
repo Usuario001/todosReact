@@ -4,49 +4,57 @@
             "titulo":"task 1",
             "responsible":"Manuel",
             "description":"Lorem Ipsum",
-            "priority":"low"
+            "priority":"low",
+            "activa":false
         },
         {
             "titulo":"task 2",
             "responsible":"Manuel",
             "description":"Lorem Ipsum",
-            "priority":"medium"
+            "priority":"medium",
+            "activa":false
         },
         {
             "titulo":"task 3",
             "responsible":"Mariana",
             "description":"Lorem Ipsum",
-            "priority":"high"
+            "priority":"high",
+            "activa":false
         },
         {
             "titulo":"task 4",
             "responsible":"Mariana",
             "description":"Lorem Ipsum",
-            "priority":"Low"
+            "priority":"Low",
+            "activa":false
         },
         {
             "titulo":"task 5",
             "responsible":"Manuel",
             "description":"Lorem Ipsum",
-            "priority":"high"
+            "priority":"high",
+            "activa":true
         },
         {
             "titulo":"task 6",
             "responsible":"Manuel",
             "description":"Lorem Ipsum",
-            "priority":"high"
+            "priority":"high",
+            "activa":false
         },
         {
             "titulo":"task 7",
             "responsible":"Mariana",
             "description":"Lorem Ipsum",
-            "priority":"medium"
+            "priority":"medium",
+            "activa":false
         },
         {
             "titulo":"task 8",
             "responsible":"Manuel",
             "description":"Lorem Ipsum",
-            "priority":"Low"
+            "priority":"Low",
+            "activa":true
         }
     ]
 }

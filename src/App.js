@@ -6,6 +6,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import TodoForm from './components/TodoForm';
 import Clock from './components/Clock';
+import Usuarios from './components/Usuarios';
 //import QrCodes from './components/QrCodes';
 //data
 import {todos} from './todos.json';
@@ -14,9 +15,28 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      todos:todos
+      todos:todos,
+      isToggleOn:true,
+      users:[]
     }
     this.handleAddTodo = this.handleAddTodo.bind(this);
+  }
+
+  componentWillMount(){
+      fetch('https://randomuser.me/api?results=50')
+          .then(response => response.json())
+          .then(users => {
+              users.results.forEach(
+                  user => {
+                      let data = {
+                          name:user.name.first,
+                          email:user.email,
+                          password:user.login.password
+                      }
+                      this.setState({users:this.state.users.concat([data])})
+                  }
+              )
+          })
   }
 
   handleAddTodo(todo){
@@ -26,7 +46,6 @@ class App extends Component {
   }
 
   handleRemoveTodo(indice){
-    console.log(indice);
     if(window.confirm("Estas seguro de eliminar esta tarea?")){
       this.setState({
         todos: this.state.todos.filter((todos,i) => {
@@ -34,6 +53,17 @@ class App extends Component {
         })
       })
     }
+  }
+
+  handleClick(indice) {
+      this.setState({
+          todos : this.state.todos.map((todo,i) => {
+                  if (i === indice ){
+                      todo.activa = todo.activa ? false : true;
+                  }
+              return todo;
+          })
+      })
   }
 
   render() {
@@ -56,8 +86,13 @@ class App extends Component {
                 className="btn btn-danger"
                 onClick={this.handleRemoveTodo.bind(this,i)}
               >
-                Tarea Terminada/eliminar
+                eliminar
               </button>
+            </div>
+            <div>
+                <button onClick={this.handleClick.bind(this, i)}>
+                    Tarea Terminada {todo.activa ? 'SI' : 'NO'}
+                </button>
             </div>
           </div>
         </div>
@@ -82,6 +117,7 @@ class App extends Component {
           <div className="row mt-4">
             <div className="col-md-6">
               {/*<QrCodes/>*/}
+                <Usuarios data={this.state.users} />
             </div>
           </div>
         </div>

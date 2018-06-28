@@ -7,7 +7,8 @@ class TodoForm extends Component{
             "titulo":"",
             "responsible":"",
             "description":"",
-            "priority":"medium"
+            "priority":"medium",
+            "activa":false
         };
         //inicializar
         this.handleInput = this.handleInput.bind(this);
@@ -20,10 +21,16 @@ class TodoForm extends Component{
             [name]: value
         })
     }
+
     handleSubmit(e){
         e.preventDefault();
         this.props.onAddTodo(this.state);
     }
+
+    componentDidUpdate(){
+
+    }
+
     render(){
         return (
             <div className="card">
@@ -65,6 +72,12 @@ class TodoForm extends Component{
                             <option>hihgh</option>
                         </select>
                     </div>
+                    <div className="checkbox">
+                        <label>
+                            <input className="toggleInput" type="checkbox" checked data-toggle="toggle"/>
+                            Terminada
+                        </label>
+                    </div>
                     <button type="submt" className="btn btn-primary">
                         Guardar
                     </button>
@@ -73,4 +86,5 @@ class TodoForm extends Component{
         )
     }
 }
+
 export default TodoForm
