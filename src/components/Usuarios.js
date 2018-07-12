@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 
 class Usuarios extends Component{
-    constructor(props){
-        super(props)
-    }
 
     render(){
         if(this.props.data.length > 0){

@@ -4,6 +4,9 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="redux" />
+    <orderEntry type="module" module-name="laravel_api" />
+    <orderEntry type="module" module-name="laravel_api" />
+    <orderEntry type="module" module-name="vuejs-workshop" />
+    <orderEntry type="module" module-name="vue-storefront" />
   </component>
 </module>

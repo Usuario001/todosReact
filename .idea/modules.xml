@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../redux/.idea/redux.iml" filepath="$PROJECT_DIR$/../redux/.idea/redux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../laravel_api/.idea/laravel_api.iml" filepath="$PROJECT_DIR$/../laravel_api/.idea/laravel_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/todosReact.iml" filepath="$PROJECT_DIR$/.idea/todosReact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vue-storefront/.idea/vue-storefront.iml" filepath="$PROJECT_DIR$/../vue-storefront/.idea/vue-storefront.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vuejs-workshop/.idea/vuejs-workshop.iml" filepath="$PROJECT_DIR$/../vuejs-workshop/.idea/vuejs-workshop.iml" />
     </modules>
   </component>
 </project>
